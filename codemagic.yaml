@@ -12,7 +12,7 @@ workflows:
       vars:
         XCODE_WORKSPACE: "Runner.xcworkspace"
         XCODE_SCHEME: "Runner"
-        APP_STORE_APPLE_ID: YOUR_APP_ID_HERE  # App Store Connect → App Information → Apple ID
+        APP_STORE_APPLE_ID: 6752959178
       flutter: stable
       xcode: latest
       cocoapods: default
