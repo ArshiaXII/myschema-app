@@ -41,7 +41,7 @@ workflows:
           cd schemaflow_app
           flutter build ipa --release \
             --build-name=1.0.3 \
-            --build-number=$BUILD_NUMBER \
+            --build-number=3 \
             --export-options-plist=/Users/builder/export_options.plist
     artifacts:
       - schemaflow_app/build/ios/ipa/*.ipa
