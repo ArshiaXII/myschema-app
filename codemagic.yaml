@@ -33,7 +33,7 @@ workflows:
           flutter packages pub get
       - name: Install pods
         script: |
-          cd ios
+          cd ../ios
           pod install
       - name: Flutter build ipa
         script: |
