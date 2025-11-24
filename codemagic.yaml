@@ -42,9 +42,9 @@ workflows:
             --build-number=$(($(app-store-connect get-latest-build-number com.arshiamedia.myschema) + 1)) \
             --export-options-plist=/Users/builder/export_options.plist
     artifacts:
-      - schemaflow_app/build/ios/ipa/*.ipa
+      - build/ios/ipa/*.ipa
       - /tmp/xcodebuild_logs/*.log
-      - schemaflow_app/flutter_drive.log
+      - flutter_drive.log
     publishing:
       email:
         recipients:
