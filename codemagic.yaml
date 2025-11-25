@@ -41,6 +41,10 @@ workflows:
             --build-name=1.0.0 \
             --build-number=100 \
             --export-options-plist=/Users/builder/export_options.plist
+      - name: Publish to App Store Connect
+        script: |
+          app-store-connect publish \
+            --path build/ios/ipa/myschema_app.ipa
     artifacts:
       - build/ios/ipa/*.ipa
       - /tmp/xcodebuild_logs/*.log
